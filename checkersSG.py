@@ -7,6 +7,8 @@ sqSz = 60
 window = GraphWin("Checkers",sqSz*10,sqSz*10)
 window.setCoords(0,0,sqSz*10,sqSz*10)
 
-#Create Square
-sQ = Rectangle (Point(sqSz, sqSz),Point(sqSz*2, sqSz*2))
-sQ.draw (window)
+#Create Square Function
+def run_square(row,column):
+    sQ = Rectangle (Point(sqSz*(row+1),sqSz*(column+1)),Point(sqSz*(row+1), sqSz*(column +2)))                    
+    sQ.draw (window)
+
