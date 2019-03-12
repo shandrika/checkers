@@ -12,5 +12,6 @@ def run_square(row,column):
     sQ = Rectangle (Point(sqSz*(row+1),sqSz*(column+1)),Point(sqSz*(row+2), sqSz*(column+2)))                    
     sQ.draw (window)
 
-for i in range (8):
-    run_square(i,1)
+for c in range (8):
+    for i in range (8):
+        run_square(i,c)
