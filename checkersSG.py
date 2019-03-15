@@ -1,7 +1,7 @@
 from graphics import*
 
 #Square Variable
-sqSz = 50
+sqSz = int (input("What square size would you like for the checkerboard?"))
 
 #Create Window
 window = GraphWin("Checkers",sqSz*10,sqSz*10)
